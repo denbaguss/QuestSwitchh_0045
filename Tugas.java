@@ -38,5 +38,28 @@ public class Tugas {
         }
         System.out.println("Predikat Anda: " + predikat);
 
+         if (predikat.equals("A (Sangat Baik)") || predikat.equals("AB (Baik Sekali)")) {
+            System.out.println("Anda memenuhi syarat untuk mendaftar sebagai Asisten Dosen");
+            System.out.println("Pilih mata kuliah yang ingin Anda ajukan:");
+            System.out.println("1. Struktur Data");
+            System.out.println("2. Pemrograman Berorientasi Objek");
+            System.out.println("3. Basis Data");
+            System.out.println("4. Algoritma dan Pemrograman");
+            System.out.println("5. Rekayasa Perangkat Lunak");
+            System.out.print("Masukkan nomor pilihan (1-5): ");
+
+            if (raden.hasNextInt()) {
+                System.out.println("Input tidak valid. Program berakhir.");
+                raden.close();
+                return;
+            }
+            int pilihan = raden.nextInt();
+            double nilaiPilihan = 0;
+            String namaMatkul = "";
+
+            
+
+
+        }
     }
-}
+}    
