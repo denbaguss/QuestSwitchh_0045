@@ -4,6 +4,7 @@ public class Tugas {
     public static void main(String[] args) {
         Scanner raden = new Scanner(System.in);
         double sData, pbo, bData, algo, rpl;
+        String predikat;
 
         System.out.println("Program Seleksi ASDOS");
         System.out.print("Masukkan nilai Struktur Data: ");
@@ -20,6 +21,9 @@ public class Tugas {
 
         System.out.print("Masukkan nilai Rekayasa Perangkat Lunak: ");
         rpl = raden.nextDouble();
+
+        double rataRata = (strukturData + pbo + bData + algo + rpl) / 5;
+        System.out.println("\nRata-rata nilai Anda: " + rataRata);
 
     }
 }
