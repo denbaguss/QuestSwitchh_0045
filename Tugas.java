@@ -36,6 +36,7 @@ public class Tugas {
         } else {
             predikat = "C (Kurang)";
         }
+        System.out.println("Predikat Anda: " + predikat);
 
     }
 }
