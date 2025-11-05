@@ -1,4 +1,4 @@
-// ...existing code...
+
 import java.util.Scanner;
 
 public class Tugas {
@@ -81,23 +81,25 @@ public class Tugas {
                     break;
                 default:
                     System.out.println("Nomor pilihan tidak valid. Program berakhir.");
-                    raden.close();
                     return;
             }
 
             System.out.printf("%nNilai Anda di mata kuliah %s adalah: %.2f%n", namaMatkul, nilaiPilihan);
             if (nilaiPilihan >= 75) {
-                System.out.println("SELAMAT! Anda eligible untuk menjadi Asisten Dosen pada mata kuliah " + namaMatkul + ".");
+                System.out.println(
+                        "SELAMAT! Anda eligible untuk menjadi Asisten Dosen pada mata kuliah " + namaMatkul + ".");
             } else {
-                System.out.println("Maaf, nilai Anda di mata kuliah " + namaMatkul + " (" + String.format("%.2f", nilaiPilihan) + ") kurang dari 75.");
+                System.out.println("Maaf, nilai Anda di mata kuliah " + namaMatkul + " ("
+                        + String.format("%.2f", nilaiPilihan) + ") kurang dari 75.");
                 System.out.println("Anda belum memenuhi syarat untuk posisi Asisten Dosen pada mata kuliah ini.");
             }
 
         } else {
-            System.out.println("Maaf, Anda belum memenuhi syarat untuk mendaftar sebagai Asisten Dosen karena predikat Anda " + predikat + ".");
+            System.out.println(
+                    "Maaf, Anda belum memenuhi syarat untuk mendaftar sebagai Asisten Dosen karena predikat Anda "
+                            + predikat + ".");
             System.out.println("Program berakhir");
         }
 
-        raden.close();
     }
 }
