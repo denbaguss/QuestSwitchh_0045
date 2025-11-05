@@ -25,5 +25,17 @@ public class Tugas {
         double rataRata = (strukturData + pbo + bData + algo + rpl) / 5;
         System.out.println("\nRata-rata nilai Anda: " + rataRata);
 
+          if (rataRata >= 95) {
+            predikat = "A (Sangat Baik)";
+        } else if (rataRata >= 90) {
+            predikat = "AB (Baik Sekali)";
+        } else if (rataRata >= 80) {
+            predikat = "B (Baik)";
+        } else if (rataRata >= 70) {
+            predikat = "BC (Cukup)";
+        } else {
+            predikat = "C (Kurang)";
+        }
+
     }
 }
