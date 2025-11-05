@@ -57,9 +57,32 @@ public class Tugas {
             double nilaiPilihan = 0;
             String namaMatkul = "";
 
+            switch (pilihan) {
+                case 1:
+                    nilaiPilihan = strukturData;
+                    namaMatkul = "Struktur Data";
+                    break;
+                case 2:
+                    nilaiPilihan = pbo;
+                    namaMatkul = "Pemrograman Berorientasi Objek";
+                    break;
+                case 3:
+                    nilaiPilihan = bData;
+                    namaMatkul = "Basis Data";
+                    break;
+                case 4:
+                    nilaiPilihan = algo;
+                    namaMatkul = "Algoritma dan Pemrograman";
+                    break;
+                case 5:
+                    nilaiPilihan = rpl;
+                    namaMatkul = "Rekayasa Perangkat Lunak";
+                    break;
+                default:
+                    System.out.println("Nomor pilihan tidak valid. Program berakhir.");
+                    break;
             
-
-
+            }
         }
     }
 }    
